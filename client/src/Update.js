@@ -40,7 +40,7 @@ const Update = () => {
       discription:    JSON.stringify(convertToRaw(editorState.getCurrentContent()))
   }
   // console.log(data)
-    await Axios.post(`update/${id}`,data)
+    await Axios.post(`/update/${id}`,data)
     .then(()=>console.log("succes for update"))
     .catch((err)=>console.log(err))
     
