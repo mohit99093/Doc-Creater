@@ -32,18 +32,18 @@ const List = () => {
     window.open(`${window.location.href}Create`)
     // return history.push({ pathname: "./Create" });
   };
-  // var data = sortedvalue.map((d, i) => 
+  var data = sortedvalue.map((d, i) => 
      
-  //     <>
-  //       <tr onClick={()=>handleEdit(i)}>
-  //         <td>{i + 1}</td>
-  //         <td>{d.title}</td>
-  //         <td>{d.lastupdated}</td>
+      <>
+        <tr onClick={()=>handleEdit(i)}>
+          <td>{i + 1}</td>
+          <td>{d.title}</td>
+          <td>{d.lastupdated}</td>
         
-  //       </tr>
-  //     </>
-  //   )
-    const data = sortedvalue.map(e => <>Mohit</>)
+        </tr>
+      </>
+    )
+    // const data = sortedvalue.map(e => <>Mohit</>)
   
   const handlesearch=(e)=>{
       setSearch(e.target.value)
